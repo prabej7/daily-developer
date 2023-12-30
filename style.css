@@ -1,0 +1,326 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+.main{
+    background-image: url(./Images/bg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-logo{
+    color: white;
+}
+
+.nav-menu-links{
+    display: flex;
+    height: 48px;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu-links{
+    padding: 15px;
+    border-radius: 5px;
+    transition: border-radius 0.3s ease;
+}
+
+.btn{
+    padding: 10px;
+    background-color: gold;
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+.get-started{
+    font-weight: bolder;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+    color: black;
+}
+
+.get-started:hover{
+    box-shadow: 0px 0px 100px gold;
+    transition: box-shadow 0.5s;
+}
+
+.menu-links:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 40px;
+    opacity: 100%;
+    
+}
+
+.logonav{
+    text-shadow: 0px 0px 0px white;
+    transition: text-shadow 0.8s ease;
+}
+
+.logonav:hover{
+    text-shadow: 0px 0px 50px white;
+    transition: text-shadow 0.8s ease;
+}
+
+.centered-txt{
+    cursor: pointer;
+}
+
+.hero-section-main{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centeredh1{
+    color: white;
+    font-size: 4rem;
+    text-shadow: 0px 0px 40px black;
+    letter-spacing: 0px;
+    opacity: 100%;
+    animation: stretch 2s ease;
+}
+@media (min-width:800px) {
+    @keyframes stretch {
+        from{
+            letter-spacing: 0.8rem;
+            opacity: 0%;
+            transition: 1s ease;
+        }
+        to{
+            letter-spacing: 0em;
+            opacity: 100%;
+            transition: 1s ease;
+        }
+    }   
+}
+
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+}
+
+.subtitletext{
+    color: white;
+    text-shadow: 0px 0px 40px black;
+}
+
+.line{
+    background-color: gold;
+    height: 3px;
+    width: 0%;
+    transition: width 0.8s ease;
+    margin-left: 237px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.centered-txt:hover{
+    .line{
+        width: 52%;
+        transition: width 0.8s ease;
+    }
+}
+
+.login-box-main{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    height: 400px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.email{
+    /* margin: 50px;
+    margin-bottom: -10px; */
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.password-box{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.icon{
+    font-size: 2.1rem;
+
+    margin-right: 2rem;
+    background-color: white;
+    color: black;
+    padding: 8px;
+    margin-right: -1px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.fa-user{
+    padding-top: 7.5px;
+}
+
+.input{
+    padding: 15px;
+    width: 80%;
+    height: 17px;
+    font-size: 1rem;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid white;
+}
+
+.fa-key{
+    padding-top: 7.5px;
+    font-size: 2.1rem;
+}
+
+.login-button{
+    padding: 15px;
+    width: 80%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-btn{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login-button{
+    background-color: gold;
+    transition: 0.5s ease;
+}
+
+.login-button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s ease;
+}
+
+h2{
+    margin-bottom: 25px;
+    color: white;
+}
+
+@media (max-width:600px) {
+    .nav-bar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .get-started{
+        width: 7rem;
+    }
+    .main{
+        background-position:-50px;
+    }
+    .centeredh1{
+        text-align: center;
+        line-height: 0.9;
+    }
+    .subtitletext{
+        margin-top: 10px;
+    }
+    .centered-txt:hover{
+        .line{
+            width: 0px;
+        }
+    }
+    .menu-links:hover{
+        padding: 7px;
+    }
+}
+
+@media (max-width:800px) {
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-logo{
+        text-align: center;
+    }
+    .nav-menu-links{
+        width: 100%;
+    }
+}
+
+@media (max-width:400px) {
+    .nav-menu-links{
+        transform: scale(0.9);
+    }
+    .centeredh1{
+        font-size: 3.5rem;
+    }
+}
+
+.confirm-password-box{
+    margin-bottom: 50px;
+}
+
+.already-account{
+color: white;
+text-align: center;
+margin-top: 25px;
+font-size: 0.8rem;
+text-shadow: 0px 0px 5px black;
+}
+
+.sign-up-box{
+height: 500px;
+}
+
+.login-link{
+color: gold;
+text-shadow: 0px 0px rgba(255, 217, 0, 0) ;
+transition: text-shadow 0.5s;
+}
+
+.login-link:hover{
+text-shadow: 0px 0px gold;
+transition: text-shadow 0.5s;
+}
+
+
+
